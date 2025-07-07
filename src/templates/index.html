@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{{ url_for('add') }}">Agregar Película</a>
+<ul>
+    {% for p in peliculas %}
+    <li>{{ p.titulo }} - Dirigida por: {{ p.director }}</li>
+    {% else %}
+    <li>No hay películas aún.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

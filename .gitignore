@@ -1,0 +1,36 @@
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv/
+
+# Archivos de bases de datos SQLite
+*.db
+
+# __pycache__ y archivos compilados
+__pycache__/
+*.py[cod]
+
+# Archivos de log
+*.log
+
+# Config de IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Archivos de test temporales
+test/test.db
+
+# Entornos y dependencias Python
+*.egg-info/
+.eggs/
+.Python
+
+# Archivos de GitHub Actions que no quieras subir (normalmente sí se suben los YAML)
+# .github/workflows/
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
