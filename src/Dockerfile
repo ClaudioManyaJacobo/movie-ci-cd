@@ -1,4 +1,5 @@
 # src/Dockerfile
+COPY src/ /app
 
 # Usa imagen base de Python
 FROM python:3.13-slim
