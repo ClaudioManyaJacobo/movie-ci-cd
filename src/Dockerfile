@@ -1,6 +1,3 @@
-# src/Dockerfile
-COPY src/ /app
-
 # Usa imagen base de Python
 FROM python:3.13-slim
 
@@ -16,6 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Expone el puerto
 EXPOSE 5000
 
+# Define FLASK_APP
 ENV FLASK_APP=app.py
 
 # Comando para correr la app Flask
